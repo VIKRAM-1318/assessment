@@ -2,8 +2,7 @@ services:
   - type: web
     name: buzzbazaar-marketplace
     env: docker
-    dockerfilePath: ./Application/Dockerfile
-    dockerContext: ./Application
+    dockerfilePath: Dockerfile
     plan: free
     region: oregon
     envVars:
