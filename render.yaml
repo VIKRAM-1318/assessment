@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: buzzbazaar-marketplace
+    env: docker
+    dockerfilePath: ./Application/Dockerfile
+    dockerContext: ./Application
+    plan: free
+    region: oregon
+    envVars:
+      - key: APP_ENV
+        value: production
+      - key: APP_DEBUG
+        value: "false"
+      - key: DB_CONNECTION
+        value: sqlite
+      - key: PORT
+        value: "10000"
