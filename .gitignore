@@ -1,0 +1,19 @@
+# Dependencies
+Application/vendor/
+Application/node_modules/
+
+# Environment and sensitive files
+Application/.env
+Application/.env.backup
+Application/.env.production
+
+# Logs and cache
+Application/storage/logs/*.log
+Application/storage/framework/cache/data/*
+Application/storage/framework/sessions/*
+Application/storage/framework/views/*
+Application/.phpunit.result.cache
+
+# System files
+.DS_Store
+Thumbs.db
